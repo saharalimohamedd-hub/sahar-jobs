@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>مكتب سحر للتوظيف</title>
   <style>
-    
     body {
-      
-        margin: 0;
+      margin: 0;
       font-family: 'Cairo', sans-serif;
       direction: rtl;
       text-align: center;
-
-      /* خلفية صورة */
-      background: url("bace2.jpg") no-repeat  center fixed;
+      background: url("hom.jpg") no-repeat center 1% fixed;
       background-size: cover;
     }
     header {
-      
       background-color: #8e9ba0cc;
       color: white;
       padding: 10px;
       text-align: center;
+      opacity: 0;
+      transform: translateY(-30px);
+      transition: all 1s ease;
     }
     header img {
       max-height: 130px;
@@ -41,6 +38,9 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
     }
     .container h2 {
       color: #008CBA;
@@ -67,20 +67,18 @@
     }
     .buttons a:hover {
       background: #006F98;
+      transform: scale(1.1) rotate(-2deg);
     }
   </style>
 </head>
 <body>
 
-<header>
-  <!-- استبدلي logo.png بصورة شعارك -->
+<header id="header">
   <img src="logo0-01.svg" alt="شعار مكتب سحر للتوظيف">
   <h1>مكتب سحر للتوظيف</h1>
 </header>
 
-  
-</body>
-<div class="container">
+<div class="container" id="about">
   <h2>من نحن</h2>
   <p>
     مكتب <strong>سحر للتوظيف</strong> 
@@ -91,22 +89,29 @@
   </p>
 
   <div class="buttons">
-    <a href="job.html"> الوظائف المتاحة
-  <a href="king.html"> اصحاب العمل
+    <a href="job.html"> الوظائف المتاحة</a>
+    <a href="king.html"> اصحاب العمل</a>
   </div>
 </div>
 
+<script>
+  // عند تحميل الصفحة يظهر الهيدر والكونتينر بتأثير جميل
+  window.onload = function() {
+    document.getElementById("header").style.opacity = "1";
+    document.getElementById("header").style.transform = "translateY(0)";
+    setTimeout(() => {
+      document.getElementById("about").style.opacity = "1";
+      document.getElementById("about").style.transform = "translateY(0)";
+    }, 500);
+  };
+
+  // إضافة تأثير وميض على العنوان كل 4 ثواني
+  setInterval(() => {
+    let h1 = document.querySelector("header h1");
+    h1.style.color = "#FFD700";
+    setTimeout(() => { h1.style.color = "white"; }, 700);
+  }, 4000);
+</script>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
