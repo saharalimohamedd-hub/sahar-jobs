@@ -1,75 +1,98 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وظائف</title>
-    <link rel="stylesheet" href="path_to_your_styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome icons -->
-    <style>
-        /* الأساسيات للأزرار */
-        .apply-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            background-color: #25d366; /* اللون الأخضر الخاص بالواتساب */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة الظل */
-        }
-
-        .apply-btn.email {
-            background-color: #0078D4; /* اللون الأزرق الخاص بالإيميل */
-        }
-
-        /* تغيير اللون والتكبير عند التمرير */
-        .apply-btn:hover {
-            background-color: #128C7E; /* تغيير اللون عند التمرير للواتساب */
-            transform: scale(1.1); /* تأثير التكبير */
-        }
-
-        .apply-btn.email:hover {
-            background-color: #005A8A; /* تغيير اللون عند التمرير للإيميل */
-            transform: scale(1.1); /* تأثير التكبير */
-        }
-
-        /* تصغير الزر عند النقر */
-        .apply-btn:active {
-            transform: scale(0.98); /* تصغير الزر عند النقر */
-        }
-
-        /* تحسين شكل الأزرار عند عرض الصفحة */
-        .job-card {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل للأزرار */
-        }
-
-        h3 {
-            font-size: 20px;
-        }
-
-        p {
-            font-size: 14px;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <title>الوظائف المتاحة - مكتب سحر للتوظيف</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Tahoma', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f0f4f8, #e6f0ff);
+      direction: rtl;
+    }
+    header {
+      background-color: #0072C6;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    .job-card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .job-card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .job-card p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .apply-btn {
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 10px 15px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .apply-btn i {
+      margin-left: 5px;
+    }
+    .apply-btn.email {
+      background: #0072C6;
+    }
+    .apply-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
 
+<header>
+  مكتب سحر للتوظيف - الوظائف المتاحة
+</header>
+
+<div class="container">
+
+  <!-- وظيفة 1 -->
+  <div class="job-card">
+    <h3>سائقين سيارات</h3>
+    <p>المكان: دولة الكويت</p>
+    <p>خبرة في التوصيل</p>
+    <p>جواز سفر ساري اكثر من سنتين</p>
+    <p>العمر: بين 27_35</p>
+    <p>رخصة سارية</p>
+    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة سائقين سيارات في الكويت.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aالجواز/الرخصة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn">
+      <i class="fab fa-whatsapp"></i> قدّم عبر الواتساب
+    </a>
+    <a href="mailto:saharagency2@gmail.com" class="apply-btn email">
+      <i class="fas fa-envelope"></i> قدّم عبر الإيميل
+    </a>
+  </div>
+
   <!-- وظيفة 2 -->
   <div class="job-card">
-    <h3>كهرباء سيارات</h3>
+    <h3>مكنيكي سيارات</h3>
     <p>المكان: سلطنة عمان</p>
     <p>خبرة في المجال</p>
-    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة كهرباء سيارات في سلطنة عمان.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn whatsapp">
+    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة مكنيكي سيارات في سلطنة عمان.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn">
       <i class="fab fa-whatsapp"></i> قدّم عبر الواتساب
     </a>
     <a href="mailto:saharagency2@gmail.com" class="apply-btn email">
@@ -79,24 +102,36 @@
 
   <!-- وظيفة 2 -->
   <div class="job-card">
-    <h3>فني تركيب وصيانة محطات التحلية</h3>
+    <h3>كهرباء  سيارات</h3>
     <p>المكان: سلطنة عمان</p>
-    <p>المؤهل: لا يهم</p>
-    <p>الخبرة: سنتين على الأقل</p>
-    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة فني تركيب وصيانة محطات المياه في سلطنة عمان.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn whatsapp">
+    <p>خبرة في المجال</p>
+    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة كهرباء سيارات في سلطنة عمان.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn">
       <i class="fab fa-whatsapp"></i> قدّم عبر الواتساب
     </a>
     <a href="mailto:saharagency2@gmail.com" class="apply-btn email">
       <i class="fas fa-envelope"></i> قدّم عبر الإيميل
     </a>
   </div>
-
+ <!-- وظيفة 2 -->
+   <div class="job-card">
+      <h3>فني تركيب وصيانة محطات التحلية</h3>
+      <p>المكان: سلطنة عمان</p>
+      <p>المؤهل: لا يهم </p>
+      <p>الخبرة: سنتين على الأقل</p>
+    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة  فني تركيب وصيانة محطات المياه في سلطنة عمان.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn">
+      <i class="fab fa-whatsapp"></i> قدّم عبر الواتساب
+    </a>
+    <a href="mailto:saharagency2@gmail.com" class="apply-btn email">
+      <i class="fas fa-envelope"></i> قدّم عبر الإيميل
+    </a>
+  </div>
   <div class="job-card">
-    <h3>محاسب</h3>
+    <h3>محاسب </h3>
     <p>المكان: دولة الكويت</p>
-    <p>المؤهل: بكالوريوس محاسبة</p>
-    <p>الخبرة: سنتين على الأقل</p>
-    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة محاسب في الكويت.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn whatsapp">
+       <p>المؤهل: بكالوريوس محاسبة</p>
+      <p>الخبرة: سنتين على الأقل</p>
+   
+    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة  محاسب في الكويت.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn">
       <i class="fab fa-whatsapp"></i> قدّم عبر الواتساب
     </a>
     <a href="mailto:saharagency2@gmail.com" class="apply-btn email">
@@ -105,24 +140,24 @@
   </div>
 
   <!-- إضافة وظائف أخرى بنفس النمط -->
-
-<div class="job-card">
-    <h3>كاشير</h3>
+    <div class="job-card">
+    <h3>كاشير </h3>
     <p>المكان: دولة الكويت</p>
-    <p>خبرة في المجال</p>
-    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة كاشير في الكويت.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn whatsapp">
+    <p>خبرة في المجال </p>
+   
+    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة  كاشير في الكويت.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn">
       <i class="fab fa-whatsapp"></i> قدّم عبر الواتساب
     </a>
     <a href="mailto:saharagency2@gmail.com" class="apply-btn email">
       <i class="fas fa-envelope"></i> قدّم عبر الإيميل
     </a>
   </div>
-
   <!-- مثال وظيفة 3 -->
   <div class="job-card">
     <h3>عامل تحميل</h3>
     <p>المكان: دولة الكويت</p>
-    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة عامل تحميل في الكويت.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn whatsapp">
+
+    <a href="https://wa.me/+249119091755?text=مرحباً، أنا مهتم بالتقديم على وظيفة عامل تحميل في الكويت.%0Aالاسم: %0Aالعمر: %0Aرقم الهاتف: %0Aالخبرة: %0Aشكراً لتواصلكم، وأتطلع لفرصة الانضمام." target="_blank" class="apply-btn">
       <i class="fab fa-whatsapp"></i> قدّم عبر الواتساب
     </a>
     <a href="mailto:saharagency2@gmail.com" class="apply-btn email">
@@ -130,38 +165,7 @@
     </a>
   </div>
 
-  <script>
-    // إضافة تأثير النقر على الأزرار باستخدام JavaScript
-    const buttons = document.querySelectorAll('.apply-btn');
-    
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        // إضافة تأثير بريق سريع عند النقر على الزر
-        button.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
-        button.style.transform = 'scale(0.95)'; // تصغير الزر قليلاً
-        button.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)'; // إضافة ظل قوي
-
-        // إعادة الوضع الطبيعي بعد فترة قصيرة (تأثير سريع)
-        setTimeout(() => {
-          button.style.transform = 'scale(1)';
-          button.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-        }, 200);
-      });
-    });
-
-    // إضافة تأثيرات التمرير باستخدام JavaScript
-    buttons.forEach(button => {
-      button.addEventListener('mouseenter', function() {
-        button.style.transform = 'scale(1.1)'; // تكبير الزر عند التمرير
-        button.style.transition = 'transform 0.3s ease'; // تأثير سلس
-      });
-
-      button.addEventListener('mouseleave', function() {
-        button.style.transform = 'scale(1)'; // إعادة الحجم الطبيعي عند الخروج
-      });
-    });
-  </script>
+</div>
 
 </body>
 </html>
-
