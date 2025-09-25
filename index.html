@@ -30,11 +30,13 @@
       margin: 0 auto 5px auto;
       width: 90%; /* لجعل الصورة متجاوبة */
       max-width: 130px;
+      transition: transform 1s ease; /* تجهيز للأنيميشن */
     }
 
     header h1 {
       margin: 0;
       font-size: 26px;
+      transition: color 0.5s ease;
     }
 
     .container {
@@ -149,12 +151,21 @@
     }, 500);
   };
 
-  // إضافة تأثير وميض على العنوان كل 4 ثواني
+  // تأثير وميض على العنوان كل 4 ثواني
   setInterval(() => {
     let h1 = document.querySelector("header h1");
     h1.style.color = "#FFD700";
     setTimeout(() => { h1.style.color = "white"; }, 700);
   }, 4000);
+
+  // حركة على اللوجو (تكبير وتصغير + دوران خفيف كل 5 ثواني)
+  setInterval(() => {
+    let logo = document.querySelector("header img");
+    logo.style.transform = "scale(1.2) rotate(10deg)";
+    setTimeout(() => {
+      logo.style.transform = "scale(1) rotate(0deg)";
+    }, 1000);
+  }, 5000);
 </script>
 
 </body>
